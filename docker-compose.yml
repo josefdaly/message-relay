@@ -4,6 +4,9 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy-data:/data
